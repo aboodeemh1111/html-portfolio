@@ -3,42 +3,263 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Abdalla MohamedAli | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Background stars animation */
+      @keyframes stars {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -2000px -2000px;
+        }
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url("https://www.transparenttextures.com/patterns/starfield.png");
+        opacity: 0.2;
+        z-index: -1;
+        animation: stars 100s linear infinite;
+      }
+
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Some Portfolio</h1>
-    <h2>i'm a Web Developer</h2>
-    <hr />
-    <a href="./public/movie-ranking.html"><h3>Move Ranking Project</h3></a>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-gray-800 bg-opacity-90 z-50 shadow-lg">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">Abdalla MohamedAli</h1>
+        <nav class="space-x-6">
+          <a href="#hero" class="hover:text-yellow-400">Home</a>
+          <a href="#about" class="hover:text-yellow-400">About</a>
+          <a href="#skills" class="hover:text-yellow-400">Skills</a>
+          <a href="#experience" class="hover:text-yellow-400">Experience</a>
+          <a href="#projects" class="hover:text-yellow-400">Projects</a>
+          <a href="#contact" class="hover:text-yellow-400">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    <h4>The Best MOveis According to Angela</h4>
-    <h5>My top 3 movies of all-time</h5>
-    <hr />
-    <h6>Spirted Away</h6>
-    <p>This is my favorite anime. i love it beautiful images</p>
-    <h6>Ex Machina</h6>
-    <p>realy cool sci-fi movie.</p>
-    <h6>Drive</h6>
-    <p>Awesome Movie about the future and cars!</p>
-    <br />
-    <a href="./public/birthday-invite.html"><h3>Birthday Invite Project</h3></a>
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="h-screen flex items-center justify-center text-center px-6 md:px-12"
+    >
+      <div class="z-10">
+        <h2
+          class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-yellow-400"
+        >
+          Full Stack Developer
+        </h2>
+        <p class="text-lg md:text-2xl text-gray-300 mb-6">
+          Crafting impactful web applications and scalable solutions with the
+          MERN stack.
+        </p>
+        <a
+          href="#contact"
+          class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full text-lg font-bold hover:bg-yellow-500 transition"
+          >Get In Touch</a
+        >
+      </div>
+    </section>
 
-    <h4>It's My Birthday!</h4>
-    <h5>On the 12th May</h5>
-    <img src="./assets/images/birthday-invite.png" width="200" />
-    <br />
-    <h6>What to bring</h6>
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-20 bg-gray-900">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-yellow-400 mb-4">About Me</h2>
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+          Driven Computer Systems Engineer with expertise in Full Stack
+          Development (MERN stack). Skilled in designing robust web applications
+          and enhancing system efficiencies. Known for problem-solving,
+          teamwork, and fluency in both Arabic and English, enabling seamless
+          collaboration across diverse projects.
+        </p>
+      </div>
+    </section>
 
-    <ul>
-      <li>Baloons(i love them)</li>
-      <li>Cake</li>
-      <li>an Appetite</li>
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-20 bg-gray-800">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-yellow-400 mb-4">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-6 text-yellow-400">
+          <div class="flex items-center space-x-2 font-bold">
+            <i class="fab fa-html5"></i><span>HTML5</span>
+          </div>
+          <div class="flex items-center space-x-2 font-bold">
+            <i class="fab fa-css3-alt"></i><span>CSS3</span>
+          </div>
+          <div class="flex items-center space-x-2 font-bold">
+            <i class="fab fa-js"></i><span>JavaScript</span>
+          </div>
+          <div class="flex items-center space-x-2 font-bold">
+            <i class="fab fa-react"></i><span>React</span>
+          </div>
+          <div class="flex items-center space-x-2 font-bold">
+            <i class="fab fa-node"></i><span>Node.js</span>
+          </div>
+          <div class="flex items-center space-x-2 font-bold">
+            <i class="fas fa-database"></i><span>MongoDB</span>
+          </div>
+          <div class="flex items-center space-x-2 font-bold">
+            <i class="fab fa-python"></i><span>Python</span>
+          </div>
+          <div class="flex items-center space-x-2 font-bold">
+            <i class="fab fa-docker"></i><span>Docker</span>
+          </div>
+          <div class="flex items-center space-x-2 font-bold">
+            <i class="fab fa-linux"></i><span>Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <hr />
-      <br />
-      <a href="./public/about.html">Aboute Me</a>
-      <a href="./public/contact.html">Contact Me</a>
-      <br /><br />
-    </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 md:py-20 bg-gray-900">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-yellow-400 mb-4">Experience</h2>
+        <div class="text-gray-300 space-y-8">
+          <div>
+            <h3 class="text-2xl font-bold text-white">
+              Computer Engineer - RBDC
+            </h3>
+            <p class="text-lg text-gray-400">
+              Khartoum, Sudan | March 2022 - March 2023
+            </p>
+            <p>
+              Developed and maintained IT infrastructure, installed CCTV
+              systems, configured networks, and deployed MERN stack solutions.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-white">
+              Freelance Software Engineer
+            </h3>
+            <p class="text-lg text-gray-400">2020 - 2024</p>
+            <p>
+              Created custom software solutions and full-stack applications,
+              managing entire project lifecycles from planning to deployment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-20 bg-gray-800">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-yellow-400 mb-4">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-yellow-400 mb-2">Project 1</h3>
+            <p class="text-gray-300">
+              A brief description of the project, technologies used, and
+              features implemented.
+            </p>
+            <a href="#" class="text-yellow-400 hover:text-yellow-500"
+              >View on GitHub</a
+            >
+          </div>
+          <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-yellow-400 mb-2">Project 2</h3>
+            <p class="text-gray-300">
+              A brief description of the project, technologies used, and
+              features implemented.
+            </p>
+            <a href="#" class="text-yellow-400 hover:text-yellow-500"
+              >View on GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16 md:py-20 bg-gray-900">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-yellow-400 mb-4">
+          Certifications
+        </h2>
+        <p class="text-gray-400">
+          CCTV System Certification, CCNA Certification
+        </p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 md:py-20 bg-gray-800">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-yellow-400 mb-4">Education</h2>
+        <p class="text-lg text-gray-300">
+          Bachelor of Science in Computer Systems Engineering
+        </p>
+        <p class="text-gray-400">Sudan International University, 2022</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-20 bg-gray-900">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-yellow-400 mb-4">Contact Me</h2>
+        <form class="max-w-md mx-auto space-y-4">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="w-full p-3 rounded-md border border-gray-600 bg-gray-800 text-white"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="w-full p-3 rounded-md border border-gray-600 bg-gray-800 text-white"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="w-full p-3 rounded-md border border-gray-600 bg-gray-800 text-white"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-500 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-900">
+      <div class="container mx-auto text-center text-gray-400">
+        <p>&copy; 2024 Abdalla MohamedAli. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+          <a
+            href="https://linkedin.com/in/abdullah-mohammed-ali-b640aa1b8"
+            class="hover:text-yellow-400"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:aboodeemh617@gmail.com" class="hover:text-yellow-400"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
